@@ -1,0 +1,30 @@
+.partners {
+    font-family: 'OpenSansSemibold', sans-serif;
+    color: #000000;
+    padding-bottom: 60px;
+}
+
+.partners__title {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    margin: 0;
+}
+
+.partners__items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 53px;
+}
+
+.partners__items-item {
+    text-align: center;
+}
+
+.partners__items-item-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    margin-top: 15px;
+}
