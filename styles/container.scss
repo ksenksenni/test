@@ -1,0 +1,15 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    // padding: 0 20px;
+    box-sizing: border-box;
+    // @include for-tablet-large {
+    //     max-width: 960px;
+    // }
+    // @include for-tablet {
+    //     max-width: 720px;
+    // }
+    // @include for-mobile {
+    //     max-width: 100%;
+    // }
+}
