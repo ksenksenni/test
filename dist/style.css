@@ -1,1 +1,60 @@
-@font-face{font-family:OpenSans;src:url(../fonts/OpenSans.eot);src:url(../fonts/OpenSans.eot) format("embedded-opentype"),url(../fonts/OpenSans.woff2) format("woff2"),url(../fonts/OpenSans.woff) format("woff"),url(../fonts/OpenSans.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:OpenSansSemibold;src:url(../fonts/OpenSans-Semibold.eot);src:url(../fonts/OpenSans-Semibold.eot) format("embedded-opentype"),url(../fonts/OpenSans-Semibold.woff2) format("woff2"),url(../fonts/OpenSans-Semibold.woff) format("woff"),url(../fonts/OpenSans-Semibold.ttf) format("truetype");font-weight:400;font-style:bold}body{padding:0;margin:0;font-family:OpenSans,sans-serif;font-size:16px;font-weight:400;color:#000;line-height:24px}.container{max-width:960px;margin:0 auto;box-sizing:border-box}
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans.eot");
+  src: url("../fonts/OpenSans.eot") format("embedded-opentype"), url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url("../fonts/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans-Semibold.eot") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 24px; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00468533;
+  padding-top: 32px;
+  padding-bottom: 39.5px;
+  padding-left: 32px;
+  padding-right: 35px; }
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 19.75px;
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 800px) {
+  .footer__copyright {
+    display: flex;
+    margin-bottom: 17px; } }
+
+.footer__copyright-text {
+  margin: 0;
+  font-family: 'OpenSansSemibold', sans-serif;
+  line-height: 22px; }
+
+@media (max-width: 800px) {
+  .footer__copyright-text {
+    font-size: 12px;
+    line-height: 16px; } }
