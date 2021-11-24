@@ -1,0 +1,65 @@
+.accordion {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .accordion {
+        display: block;
+        margin-bottom: 27.49px;
+    }
+    .accordion-item-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+    .accordion-item-header-text {
+        position: relative;
+        padding-left: 70px;
+        color: #004685;
+        cursor: pointer;
+        &:hover {
+            color: #00468575;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            top: -10px;
+            left: 0px;
+            width: 56px;
+            height: 56px;
+            background-repeat: no-repeat;
+        }
+    }
+    .accordion-item-header-text:first-of-type::before {
+        background-image: url(../img/ic_gibdd1.svg);
+        background-repeat: no-repeat;
+    }
+    .accordion-item-header-text:nth-child(2)::before {
+        background-image: url(../img/ic_fssp.svg);
+        background-repeat: no-repeat;
+    }
+    .accordion-item-header-text:nth-child(3)::before {
+        background-image: url(../img/ic_nalog.svg);
+        background-repeat: no-repeat;
+    }
+    .accordion-item-header-text:last-of-type:before {
+        background-image: url(../img/ic_rr.svg);
+        background-repeat: no-repeat;
+    }
+    .accordion-item-header-btn {
+        border: none;
+        background-color: #ffffff;
+    }
+    .accordion-item-content {
+        display: none;
+    }
+    .accordion-item.show .accordion-item-content {
+        padding: 10px 15px;
+        display: block;
+    }
+}
+
+// .accordion-item.show .accordion-item-header {
+//     background: #da4453;
+//     color: #fff;
+// }
