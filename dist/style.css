@@ -26,6 +26,42 @@ body {
   margin: 0 auto;
   box-sizing: border-box; }
 
+.paragraphs {
+  padding-top: 100px; }
+
+.paragraphs__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120.5px;
+  border-bottom: 1px solid #00468533; }
+  .paragraphs__item:nth-child(odd) {
+    flex-direction: row-reverse; }
+
+.paragraphs__item-image:nth-child(odd) {
+  margin-left: 40px; }
+
+.paragraphs__item-text {
+  max-width: 600px; }
+  .paragraphs__item-text:nth-child(even) {
+    margin-left: 40px; }
+
+.paragraphs__item-text-title {
+  font-family: 'OpenSansSemibold', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 22px; }
+
+.paragraphs__item-text-subtitle {
+  text-transform: uppercase;
+  color: #D30531;
+  margin-bottom: 0;
+  margin-top: 37px; }
+
+.paragraphs__item-text-description {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .partners {
   font-family: 'OpenSansSemibold', sans-serif;
   color: #000000;
