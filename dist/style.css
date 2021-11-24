@@ -36,6 +36,32 @@ body {
   margin: 0 auto;
   box-sizing: border-box; }
 
+.navigation {
+  text-align: center; }
+
+@media (max-width: 800px) {
+  .navigation {
+    display: none; } }
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 600px;
+  list-style: none;
+  margin: auto;
+  padding-left: 0; }
+
+.navigation__list-item {
+  margin-right: 28.5px; }
+
+.navigation__list-item-link {
+  color: #004685;
+  text-decoration: none;
+  border-bottom: 1px solid #00468533; }
+  .navigation__list-item-link:hover {
+    color: #00468575; }
+
 .paragraphs {
   padding-top: 100px; }
 
@@ -73,6 +99,9 @@ body {
   .accordion {
     display: block;
     margin-bottom: 27.49px; }
+  .accordion__title {
+    font-size: 20px;
+    line-height: 27px; }
   .accordion-item-header {
     display: flex;
     justify-content: space-between;
