@@ -5,3 +5,41 @@
     padding-bottom: 112px;
     color: #ffffff;
 }
+
+.search__content-title {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: 36px;
+}
+
+.search__content-form {
+    max-width: 960px;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search__content-form-input {
+    width: 80%;
+    padding: 19px 22px 19px 24px;
+    border-radius: 8px;
+    border: 2px solid #00468533;
+    font-size: 16/22px;
+    color: #00000033;
+}
+
+.search__content-form-input-btn {
+    font-family: 'OpenSansSemibold', sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+    background-color: #D30531;
+    border-radius: 8px;
+    border: none;
+    height: 60px;
+    padding: 10px 32px 17px 32px;
+    margin-left: 5px;
+}
+
+.search__content-text {
+    margin-top: 12px;
+}
