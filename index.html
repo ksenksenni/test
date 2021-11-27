@@ -10,37 +10,67 @@
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li>Личный кабинет
-                <ul>
-                    <li><a href="#">Вход в Личный кабинет</a></li>
-                </ul>
-            </li>
-            <li>Как это работает
-                <ul>
-                    <li><a href="#">Условия использования сервиса</a></li>
-                    <li>
-                        <a href="#">Способы оплаты</a>
-                    </li>
-                    <li>
-                        <a href="#">Часто задаваемые вопросы</a>
-                    </li>
-                    <li>
-                        <a href="#">Служба поддержки</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <header class="header">
+        <div class="header__burger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
 
-        <div>
+            <ul class="header__menubox">
+                <li class="menu-item--large">Личный кабинет
+                    <ul class="header__menubox--small">
+                        <li><a class="menu-item" href="#" class="link">Вход в Личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item--large">Как это работает
+                    <ul class="header__menubox--small">
+                        <li><a class="menu-item" href="#" class="link">Условия использования сервиса</a></li>
+                        <li><a class="menu-item" href="#" class="link">Способы оплаты</a></li>
+                        <li><a class="menu-item" href="#" class="link">Часто задаваемые вопросы</a></li>
+                        <li><a class="menu-item" href="#" class="link">Служба поддержки</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__logo">
             <img src="./img/logo_site-logo.svg" alt="logo">
         </div>
 
-        <div>
-            <button>
+        <div class="header__help">
+            <button class="header__help-btn">
                 <img src="./img/ic_help.svg" alt="">
             </button>
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile__logo">
+                <img src="./img/logo_site-logo.svg" alt="logo">
+            </div>
+
+            <div class="header__burger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+
+                <ul class="header__menubox">
+                    <li class="menu-item--large">Личный кабинет
+                        <ul class="header__menubox--small">
+                            <li><a class="menu-item" href="#" class="link">Вход в Личный кабинет</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item--large">Как это работает
+                        <ul class="header__menubox--small">
+                            <li><a class="menu-item" href="#" class="link">Условия использования сервиса</a></li>
+                            <li><a class="menu-item" href="#" class="link">Способы оплаты</a></li>
+                            <li><a class="menu-item" href="#" class="link">Часто задаваемые вопросы</a></li>
+                            <li><a class="menu-item" href="#" class="link">Служба поддержки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
