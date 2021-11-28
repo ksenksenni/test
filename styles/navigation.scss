@@ -1,5 +1,6 @@
 .navigation {
     text-align: center;
+    padding-top: 30px;
 }
 
 @media(max-width: 800px) {
@@ -20,6 +21,7 @@
 
 .navigation__list-item {
     margin-right: 28.5px;
+    margin-top: 10px;
 }
 
 .navigation__list-item-link {

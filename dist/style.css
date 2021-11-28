@@ -31,12 +31,6 @@ body {
   margin-top: 0;
   margin-bottom: 0; }
 
-.noshown {
-  display: none; }
-
-.show {
-  display: block; }
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -114,11 +108,9 @@ body {
   padding-left: 0; }
 
 .menu-item {
-  display: block;
-  padding: 12px 24px;
-  color: #004685;
-  text-decoration: none;
-  padding-left: 0%; }
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000 !important; }
 
 .menu-item:hover {
   text-decoration: underline; }
@@ -126,9 +118,11 @@ body {
 .menu-item:active {
   opacity: 0.7; }
 
-.menu-item--large {
-  text-transform: uppercase;
-  font-weight: bold; }
+.menu-item-small {
+  text-transform: none;
+  padding: 12px 24px;
+  color: #004685;
+  padding-left: 0%; }
 
 #menu-toggle {
   opacity: 0; }
@@ -341,7 +335,8 @@ body {
       margin-top: 8px; } }
 
 .navigation {
-  text-align: center; }
+  text-align: center;
+  padding-top: 30px; }
 
 @media (max-width: 800px) {
   .navigation {
@@ -357,7 +352,8 @@ body {
   padding-left: 0; }
 
 .navigation__list-item {
-  margin-right: 28.5px; }
+  margin-right: 28.5px;
+  margin-top: 10px; }
 
 .navigation__list-item-link {
   color: #004685;
@@ -367,17 +363,20 @@ body {
     color: #00468575; }
 
 .paragraphs {
-  padding-top: 100px; }
+  padding-top: 40px; }
 
 @media (max-width: 800px) {
   .paragraphs {
     display: none; } }
 
+.paragraphs__border {
+  border-bottom: 1px solid #00468533; }
+
 .paragraphs__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120.5px;
-  border-bottom: 1px solid #00468533; }
+  margin-bottom: 60px;
+  margin-top: 60px; }
   .paragraphs__item:nth-child(odd) {
     flex-direction: row-reverse; }
 
@@ -395,6 +394,9 @@ body {
   line-height: 32px;
   margin-top: 0;
   margin-bottom: 22px; }
+
+.paragraphs__item-link {
+  color: #004685; }
 
 .accordion {
   display: none; }
@@ -449,7 +451,8 @@ body {
 .partners {
   font-family: 'OpenSansSemibold', sans-serif;
   color: #000000;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  padding-top: 62px; }
 
 .partners__title {
   font-size: 36px;
