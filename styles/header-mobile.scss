@@ -1,39 +1,30 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 34.5px;
-    margin-right: 24px;
-    padding-top: 21px;
-    padding-bottom: 10px;
+.header-mobile {
+    display: none;
     @media(max-width: 800px) {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
-.header__help-btn {
-    background-color: #ffffff;
-    border: none;
-}
-
-.header__burger-menu {
-    display: block;
-}
-
-.menu-btn {
+.menu-btn--mobile {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 30px;
-    left: 33px;
+    top: 15.75px;
+    right: 17.25px;
     width: 30px;
     height: 33px;
     cursor: pointer;
     z-index: 1;
 }
 
-.menu-btn>span,
-.menu-btn>span::before,
-.menu-btn>span::after {
+.menu-btn--mobile>span,
+.menu-btn--mobile>span::before,
+.menu-btn--mobile>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -42,25 +33,25 @@
     transition-duration: .25s;
 }
 
-.menu-btn>span::before {
+.menu-btn--mobile>span::before {
     content: '';
     top: -8px;
 }
 
-.menu-btn>span::after {
+.menu-btn--mobile>span::after {
     content: '';
     top: 8px;
 }
 
-.header__menubox {
+.header__menubox--mobile {
     display: block;
     position: absolute;
     visibility: hidden;
     top: 0;
-    left: 0;
-    width: 280px;
-    height: 587px;
-    margin-top: 82px;
+    right: 0;
+    width: 268px;
+    height: 721px;
+    margin-top: 69px;
     padding: 21px 20px;
     background-color: #ffffff;
     opacity: 0.95;
@@ -96,27 +87,27 @@
     font-weight: bold;
 }
 
-#menu-toggle {
+#menu-toggle--mobile {
     opacity: 0;
 }
 
-#menu-toggle:checked~.menu-btn>span {
+#menu-toggle--mobile:checked~.menu-btn--mobile>span {
     transform: rotate(45deg);
 }
 
-#menu-toggle:checked~.menu-btn>span::before {
+#menu-toggle--mobile:checked~.menu-btn--mobile>span::before {
     top: 0;
     transform: rotate(0);
 }
 
-#menu-toggle:checked~.menu-btn>span::after {
+#menu-toggle--mobile:checked~.menu-btn--mobile>span::after {
     top: 0;
     transform: rotate(90deg);
 }
 
-#menu-toggle:checked~.header__menubox {
+#menu-toggle--mobile:checked~.header__menubox--mobile {
     visibility: visible;
-    left: 0;
+    right: 0;
     top: 0px;
-    width: 280px;
+    width: 268px;
 }
